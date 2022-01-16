@@ -375,7 +375,9 @@ document.getElementById("result").innerHTML = "You have " + localStorage.clickco
 function clickCounter4() {
     if (typeof(Storage) !== "storage") {
       if (localStorage.clickcount ) {
-        localStorage.clickcount = Number(localStorage.clickcount)-localStorage.clickcount
+        localStorage.clickcount = Number(localStorage.clickcount)-localStorage.clickcount;
+	      	document.getElementById("result").innerHTML = "You have " + localStorage.clickcount + " Love.";
+
       } 
   
   }

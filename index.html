@@ -316,24 +316,31 @@ function clickCounter1() {
 if (localStorage.clickcount > 10) {
     if (typeof(Storage) !== "storage") {
       if (localStorage.clickcount ) {
-        localStorage.clickcount = Number(localStorage.clickcount)-10
+        localStorage.clickcount = Number(localStorage.clickcount)-10;
+	document.getElementById("result").innerHTML = "You have " + localStorage.clickcount + " Love.";
+     
       } 
   }
   }
   else{ 
     alert('need more love.');
+document.getElementById("result").innerHTML = "You have " + localStorage.clickcount + " Love.";
+
   }
 }
 function clickCounter2() {
 if (localStorage.clickcount > 100) {
     if (typeof(Storage) !== "storage") {
       if (localStorage.clickcount ) {
-        localStorage.clickcount = Number(localStorage.clickcount)-100
+        localStorage.clickcount = Number(localStorage.clickcount)-1;
+	document.getElementById("result").innerHTML = "You have " + localStorage.clickcount + " Love.";
       } 
   }
   }
   else{ 
     alert('need more love.');
+document.getElementById("result").innerHTML = "You have " + localStorage.clickcount + " Love.";
+
   }
 }
 
@@ -341,12 +348,14 @@ function clickCounter3() {
 if (localStorage.clickcount > 1000) {
     if (typeof(Storage) !== "storage") {
       if (localStorage.clickcount ) {
-        localStorage.clickcount = Number(localStorage.clickcount)-1000
+        localStorage.clickcount = Number(localStorage.clickcount)-1000;
+	document.getElementById("result").innerHTML = "You have " + localStorage.clickcount + " Love.";
       } 
   }
   }
   else{ 
     alert('need more love.');
+document.getElementById("result").innerHTML = "You have " + localStorage.clickcount + " Love.";
   }
 }
 
@@ -358,7 +367,7 @@ function clickCounter4() {
   
   }
 }
-function myFunction() {
+function Cheater() {
   alert("Bad Mummy trying to cheat");
        localStorage.clickcount = -1;
 
@@ -375,7 +384,7 @@ function myFunction() {
 </p>
 <p>
       
-    <button style="width: 60px; height: 60px;" onkeypress="myFunction()" onclick="clickCounter()" type="button"><span style='font-size: 30px;'>   &#128150;   </span></button>   
+    <button style="width: 60px; height: 60px;" onkeypress="Cheater()" onclick="clickCounter()" type="button"><span style='font-size: 30px;'>   &#128150;   </span></button>   
 </p>
   <h1><div id="result"></div></h1>
 

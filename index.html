@@ -345,7 +345,7 @@ function clickCounter2() {
 if (localStorage.clickcount > 100) {
     if (typeof(Storage) !== "storage") {
       if (localStorage.clickcount ) {
-        localStorage.clickcount = Number(localStorage.clickcount)-10;
+        localStorage.clickcount = Number(localStorage.clickcount)-100;
 	document.getElementById("result").innerHTML = "You have " + localStorage.clickcount + " Love.";
       } 
   }
